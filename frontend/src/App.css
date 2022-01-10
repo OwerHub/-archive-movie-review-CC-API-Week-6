@@ -1,0 +1,192 @@
+
+:root{
+  --rubyRed: hsl(1, 67%, 35%);
+  --corn: hsl(58,77%,59%);
+  --blueGreen: hsl(183,65%,24%);
+  --orange: hsl(20,100%,60%);
+  --violet: hsl(253,57%,10%);
+  --violet2: hsl(253,57%,20%);
+}
+
+.App {
+ background-color: var(--violet);
+ min-height: 100vh;
+}
+
+.navbar{
+  padding-left: 15px;
+}
+
+.content{
+  margin:55px 20px 20px 0px;
+}
+
+.movies{
+ color: whitesmoke
+}
+
+.searchInput{
+  border-radius: .4rem;;
+}
+
+.searchButton{
+  margin: 0 0 0 1rem;
+  color: yellow;
+}
+
+.marker{
+ background-color: red;
+ 
+}
+
+.cardContainerDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+/* Home */
+.movieSearchDiv{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 10px;
+}
+
+/* --navbar */
+
+.navBack{
+  background-color: var(--violet2);
+}
+
+ 
+/* Card */
+
+/* .cardOutDiv{
+  position: relative;
+  padding: .5rem;
+  width: 50%;
+  min-height: 15vh;
+  margin: 1rem 1rem;
+  background-color: hsl(253,57%,50%);
+  text-align: center;
+  color: whitesmoke;
+
+} */
+
+.detailButtonDiv{
+  cursor: pointer;    
+  color: var(--corn);
+  margin: 15px;
+}
+/* .cardInDiv{
+  opacity: 1.0;
+  background-color: red;
+  height: 100%;
+} */
+
+.cardNameDiv{
+  margin: .5rem  0 1rem;
+  text-decoration: none;
+  font-size: bolder;
+  text-transform: uppercase;
+  font-size: 150%;
+  color: white;
+  background-color: hsla(0, 0%, 0%, .2);
+}
+
+.addRevButton{
+/*  position: absolute;
+ right: 5px;
+bottom: 5px; */
+cursor: pointer;
+}
+
+/* details--------------- */
+.detailsDiv{
+  color: whitesmoke;
+  padding: 1rem 2rem;
+  background-color: hsla(0, 0%, 0%, .4);
+ /*  box-shadow: 0px 0px 5px hsla(0, 0%, 0%, .5); */
+
+}
+
+
+/* stars--------------- */
+.star {
+  display: inline-block;  
+  cursor: pointer;
+}
+
+/* -------Details */
+.detailsHead{
+  font-size: 130%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 10px;
+}
+
+.overviewDiv,
+.relaseDiv,
+.reviewsDiv {
+  background-color: rgba(0,0,0, .2);
+  border-radius: 5px;
+}
+
+.reviewsDiv{
+  margin: 1.5rem 0 0 0 ;
+}
+
+.reviewHead{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 130%;
+}
+
+/* -------rewiev */
+.reviewOut{
+  margin: .5rem 0 0 0 ;
+  padding: .5rem .1rem 0;
+  background-color:rgba(255,255,255 ,.8);
+  color: black;
+  text-shadow: none;
+  text-align: left;
+  border-radius: .3rem;
+  
+}
+
+.revUserName{
+  margin:  0 .3rem .2rem ;
+}
+.revUserName span:nth-child(1){
+  background-color: black;
+  color: whitesmoke;
+  font-weight: bold;
+
+}
+
+.reviewBlock{
+  margin: 0 .5rem;
+}
+
+.starsReview{
+  color: red;
+  text-align: center;
+}
+
+
+/* ----ADDREV */
+
+.addRevButtons{
+  font-size: 130% ;
+ 
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+textarea{
+  border-radius: .5rem;
+}
